@@ -9,6 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "data:sync": "rsync -av ../SkyShards-Parser/dist/fusion-data.json ../SkyShards-Parser/dist/fusion-properties.json public/",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
     "deploy:gh-pages": "cross-env GITHUB_PAGES=true pnpm run build && gh-pages -d dist",
